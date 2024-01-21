@@ -2,6 +2,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Shared/Navbar";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { useContext } from "react";
+import { Toaster, toast } from "sonner";
 
 const Login = () => {
   const { singIn } = useContext(AuthContext);
@@ -20,6 +21,7 @@ const Login = () => {
     singIn(email, password)
       .then((result) => {
         console.log(result);
+
         // navigate user after login
         navigate(location?.state ? location.state : "/");
       })
@@ -68,7 +70,13 @@ const Login = () => {
             </label>
           </div>
           <div className="form-control mt-6">
-            <button className="btn btn-outline bg-transparent  ">Login</button>
+            <Toaster position="top-right"></Toaster>
+            <button
+              onClick={() => toast.success("Login Successful!")}
+              className="btn btn-outline bg-transparent  "
+            >
+              Login
+            </button>
           </div>
         </form>
         <p className="text-center">

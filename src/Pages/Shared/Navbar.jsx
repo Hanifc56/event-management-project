@@ -1,6 +1,10 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
+import { Toaster, toast } from "sonner";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
   const navLinks = (
     <>
       <li>
@@ -17,6 +21,16 @@ const Navbar = () => {
       </li>
     </>
   );
+  const handleLogOut = () => {
+    logOut()
+      .then((result) => {
+        console.log(result);
+        toast.success("Log Out Successful!");
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
   return (
     <div className="py-8 bg-transparent">
       <div className="navbar  ">
@@ -51,9 +65,21 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end pr-5">
-          <Link to="/login">
-            <button className="btn btn-outline">Login</button>
-          </Link>
+          <Toaster position="top-right"></Toaster>
+          {user ? (
+            <button
+              onClick={handleLogOut}
+              className="btn btn-outline text-xl font-semibold"
+            >
+              LogOut
+            </button>
+          ) : (
+            <Link to="/login">
+              <button className="btn btn-outline text-xl font-semibold">
+                Login
+              </button>
+            </Link>
+          )}
         </div>
       </div>
     </div>
