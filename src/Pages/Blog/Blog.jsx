@@ -1,12 +1,12 @@
 import Navbar from "../Shared/Navbar";
 
-const Service = () => {
+const Blog = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <h1>Our Services</h1>
+      <h1>This is blog</h1>
     </div>
   );
 };
 
-export default Service;
+export default Blog;
