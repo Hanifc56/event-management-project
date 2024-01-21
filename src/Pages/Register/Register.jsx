@@ -1,11 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../Shared/Navbar";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { useContext } from "react";
 import { Toaster, toast } from "sonner";
+import { updateProfile } from "firebase/auth";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -21,8 +23,20 @@ const Register = () => {
 
     createUser(email, password)
       .then((result) => {
-        console.log(result);
-        toast.success("User Created Successfully");
+        console.log(result.user);
+        // get user data
+        updateProfile(result.user, {
+          displayName: name,
+          photoURL: photo,
+        })
+          .then((currentUser) => {
+            console.log(currentUser, "Profile Updated");
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+
+        toast.success("User Created Successfully") && navigate("/");
       })
       .catch((error) => {
         console.error(error);

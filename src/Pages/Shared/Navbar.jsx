@@ -5,6 +5,7 @@ import { Toaster, toast } from "sonner";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+
   const navLinks = (
     <>
       <li>
@@ -64,22 +65,43 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
-        <div className="navbar-end pr-5">
-          <Toaster position="top-right"></Toaster>
+
+        <div className="navbar-end ">
           {user ? (
-            <button
-              onClick={handleLogOut}
-              className="btn btn-outline text-xl font-semibold"
-            >
-              LogOut
-            </button>
+            <>
+              <div
+                tabIndex={0}
+                role="button"
+                className="btn btn-ghost btn-circle avatar"
+              >
+                <div className="w-10 rounded-full">
+                  <img alt="User Image" src={user.photoURL} />
+                </div>
+              </div>
+              <div className="pl-2">
+                <p>{user.displayName}</p>
+              </div>
+            </>
           ) : (
-            <Link to="/login">
-              <button className="btn btn-outline text-xl font-semibold">
-                Login
-              </button>
-            </Link>
+            <></>
           )}
+          <div className="pl-3">
+            <Toaster position="top-right"></Toaster>
+            {user ? (
+              <button
+                onClick={handleLogOut}
+                className="btn btn-outline text-xl font-semibold "
+              >
+                LogOut
+              </button>
+            ) : (
+              <Link to="/login">
+                <button className="btn btn-outline text-xl font-semibold">
+                  Login
+                </button>
+              </Link>
+            )}
+          </div>
         </div>
       </div>
     </div>

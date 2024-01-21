@@ -3,9 +3,10 @@ import Navbar from "../Shared/Navbar";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { useContext } from "react";
 import { Toaster, toast } from "sonner";
+import { FaGoogle } from "react-icons/fa";
 
 const Login = () => {
-  const { singIn } = useContext(AuthContext);
+  const { singIn, googleLogin } = useContext(AuthContext);
   const location = useLocation();
   console.log("loaction form login page", location);
   const navigate = useNavigate();
@@ -23,6 +24,19 @@ const Login = () => {
         console.log(result);
 
         // navigate user after login
+        toast.success("login Successful") &&
+          navigate(location?.state ? location.state : "/");
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+  const handleLoginWithGoogle = () => {
+    //   login with google
+    googleLogin()
+      .then((result) => {
+        console.log(result);
+        // navigate to the disired loaction
         navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
@@ -79,9 +93,19 @@ const Login = () => {
             </button>
           </div>
         </form>
+        <hr className="border-black pb-5" />
+        <div className="flex justify-center pb-5">
+          <button
+            onClick={handleLoginWithGoogle}
+            className="btn btn-outline bg-transparent w-3/4
+            text-blue-700"
+          >
+            <FaGoogle></FaGoogle> Login With Google
+          </button>
+        </div>
         <p className="text-center">
           Do not Have An Account ?
-          <Link to="/register" className="text-[#F75B5F] font-bold pl-1">
+          <Link to="/register" className="text-green-400 font-bold pl-1">
             Register
           </Link>
         </p>
