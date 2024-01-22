@@ -11,8 +11,8 @@ const NewsLetter = () => {
                 Subscribe to our newsletter.
               </h2>
               <p className="mt-4 text-lg leading-8 text-gray-300">
-                Nostrud amet eu ullamco nisi aute in ad minim nostrud
-                adipisicing velit quis. Duis tempor incididunt dolore.
+                Stay connected and never miss an update! Our newsletter is your
+                go-to source for the latest news, updates, and exclusive offers.
               </p>
               <div className="mt-6 flex max-w-md gap-x-4">
                 <label htmlFor="email-address" className="sr-only">
@@ -47,8 +47,8 @@ const NewsLetter = () => {
                   Weekly articles
                 </dt>
                 <dd className="mt-2 leading-7 text-gray-400">
-                  Non laboris consequat cupidatat laborum magna. Eiusmod non
-                  irure cupidatat duis commodo amet.
+                  Dive into our weekly articles where we explore the exciting
+                  world of social event management.
                 </dd>
               </div>
               <div className="flex flex-col items-start">
@@ -60,8 +60,9 @@ const NewsLetter = () => {
                 </div>
                 <dt className="mt-4 font-semibold text-white">No spam</dt>
                 <dd className="mt-2 leading-7 text-gray-400">
-                  Officia excepteur ullamco ut sint duis proident non
-                  adipisicing. Voluptate incididunt anim.
+                  Enjoy a clutter-free inbox with our no-spam policy. We respect
+                  your privacy and ensure that you only receive relevant and
+                  valuable content from us.
                 </dd>
               </div>
             </dl>

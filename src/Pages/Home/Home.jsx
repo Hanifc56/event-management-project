@@ -2,6 +2,7 @@ import Footer from "../Shared/Footer";
 import Navbar from "../Shared/Navbar";
 import NewsLetter from "./NewsLetter";
 import Services from "./Services";
+import Team from "./Team";
 
 const Home = () => {
   return (
@@ -35,6 +36,7 @@ const Home = () => {
         </div>
       </div>
       <Services></Services>
+      <Team></Team>
       <NewsLetter></NewsLetter>
 
       <Footer></Footer>
