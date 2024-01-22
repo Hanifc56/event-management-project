@@ -5,6 +5,14 @@
     "category": "Weddings",
     "img": "https://i.ibb.co/vsjwxqt/pexels-trung-nguyen-2959192.jpg",
     "description": "Elegant wedding ceremony in a beautiful venue",
+    "detailed_descriptions": "A wedding is a joyous celebration of the union between two individuals in love. Typically a once-in-a-lifetime event, weddings involve a series of ceremonies and rituals that vary across cultures and traditions. The ceremony is often held in a place of worship or a scenic location, followed by a reception where family and friends gather to celebrate. Decorations, floral arrangements, and a carefully chosen color scheme contribute to the festive atmosphere. The bride and groom, dressed in elegant attire, exchange vows and rings, symbolizing their commitment to each other. The celebration continues with music, dancing, and a grand feast, creating cherished memories for the couple and their loved ones.",
+    "key_features": {
+      "gathering": "Bringing together friends and family to celebrate the occasion.",
+      "festivities": "Joyful atmosphere with music, dancing, and entertainment.",
+      "memories": "Creation and preservation of cherished memories.",
+      "decorations": "Thoughtfully curated decorations enhancing the ambiance.",
+      "celebration": "Sharing of love, joy, and well-wishes among attendees."
+    },
     "price": 5000.0,
     "location": "Grand Hall",
     "date": "2024-06-15"
@@ -15,6 +23,14 @@
     "category": "Birthday Parties",
     "img": "https://i.ibb.co/yXZkyVt/pexels-marina-utrabo-1729808.jpg",
     "description": "Colorful birthday celebration for all ages",
+    "detailed_descriptions": "Birthday parties are a time-honored tradition for celebrating another year of life. Whether it's a child's whimsical theme party or an elegant gathering for an adult, the focus is on joy and festivity. Decorations, balloons, and a cake with candles are essential elements. The birthday person is typically honored with gifts and well-wishes. Games and entertainment cater to the age group, ensuring a lively atmosphere. From casual backyard barbecues to formal dinner parties, birthday celebrations are an opportunity for friends and family to come together and celebrate the person's life.",
+    "key_features": {
+      "gathering": "Bringing together friends and family to celebrate the occasion.",
+      "festivities": "Joyful atmosphere with music, dancing, and entertainment.",
+      "memories": "Creation and preservation of cherished memories.",
+      "decorations": "Thoughtfully curated decorations enhancing the ambiance.",
+      "celebration": "Sharing of love, joy, and well-wishes among attendees."
+    },
     "price": 500.0,
     "age": 25,
     "theme": "Superhero"
@@ -25,6 +41,14 @@
     "category": "Anniversaries",
     "img": "https://i.ibb.co/R3wpCf1/pexels-vija-rindo-pratama-935789.jpg",
     "description": "Romantic dinner to celebrate years of love",
+    "detailed_descriptions": "Anniversaries commemorate the years of commitment and love shared between a couple. Whether it's a milestone anniversary like the silver or golden jubilee, or an annual celebration, couples often choose to reaffirm their love through meaningful gestures. Romantic dinners, weekend getaways, or intimate gatherings with close friends and family are common ways to mark the occasion. The exchange of thoughtful gifts and the reflection on shared memories contribute to the sentimental nature of anniversary celebrations.",
+    "key_features": {
+      "gathering": "Bringing together friends and family to celebrate the occasion.",
+      "festivities": "Joyful atmosphere with music, dancing, and entertainment.",
+      "memories": "Creation and preservation of cherished memories.",
+      "decorations": "Thoughtfully curated decorations enhancing the ambiance.",
+      "celebration": "Sharing of love, joy, and well-wishes among attendees."
+    },
     "price": 800.0,
     "yearsCelebrated": 10,
     "spouseNames": ["John", "Jane"]
@@ -35,6 +59,14 @@
     "category": "Engagement Parties",
     "img": "https://i.ibb.co/Xt1CJRC/pexels-trung-nguyen-5096307.jpg",
     "description": "Chic engagement party with close friends and family",
+    "detailed_descriptions": "An engagement party is a prelude to the upcoming wedding festivities, celebrating the commitment of a couple to marry. It's a more relaxed and informal gathering, providing an opportunity for the families and friends of the engaged couple to meet and mingle. Often held shortly after the proposal, engagement parties can take various forms, from casual backyard barbecues to sophisticated cocktail parties. Toasts, well-wishes, and the sharing of the engagement story are key elements of these celebrations.",
+    "key_features": {
+      "gathering": "Bringing together friends and family to celebrate the occasion.",
+      "festivities": "Joyful atmosphere with music, dancing, and entertainment.",
+      "memories": "Creation and preservation of cherished memories.",
+      "decorations": "Thoughtfully curated decorations enhancing the ambiance.",
+      "celebration": "Sharing of love, joy, and well-wishes among attendees."
+    },
     "price": 1200.0,
     "venue": "Rooftop Lounge",
     "date": "2024-03-20"
@@ -45,6 +77,14 @@
     "category": "Retirement Parties",
     "img": "https://i.ibb.co/6Jq0Xjr/pexels-kampus-production-6762314.jpg",
     "description": "Farewell celebration for a long and successful career",
+    "detailed_descriptions": "Retirement parties honor the conclusion of a person's professional career and the beginning of a new chapter in their life. Colleagues, friends, and family gather to express gratitude for the retiree's contributions and to wish them well in their retirement. Decorations may include a mix of professional achievements and personal anecdotes. Speeches, presentations, and perhaps a slideshow capture the highlights of the retiree's career. Gifts, often related to hobbies or travel, are given to commemorate the individual's newfound freedom.",
+    "key_features": {
+      "gathering": "Bringing together friends and family to celebrate the occasion.",
+      "festivities": "Joyful atmosphere with music, dancing, and entertainment.",
+      "memories": "Creation and preservation of cherished memories.",
+      "decorations": "Thoughtfully curated decorations enhancing the ambiance.",
+      "celebration": "Sharing of love, joy, and well-wishes among attendees."
+    },
     "price": 700.0,
     "retireeName": "Michael Johnson",
     "yearsInService": 30
@@ -55,6 +95,14 @@
     "category": "Baby Shower",
     "img": "https://i.ibb.co/19mYpwJ/pexels-paola-vasquez-3593432.jpg",
     "description": "Joyful baby shower welcoming a new bundle of joy",
+    "detailed_descriptions": "A baby shower is a joyful occasion celebrating the imminent arrival of a new baby. Typically hosted before the baby's birth, it brings together friends and family to shower the expectant parents with love and support. Decorations often include pastel colors and baby-themed elements. Games, such as guessing the baby's gender or creating a baby name list, add to the fun. Gifts for the baby and mother-to-be are a central focus, ranging from practical items to sentimental keepsakes. The celebration is a warm and welcoming event that anticipates the joy and excitement of welcoming a new member into the family.",
+    "key_features": {
+      "gathering": "Bringing together friends and family to celebrate the occasion.",
+      "festivities": "Joyful atmosphere with music, dancing, and entertainment.",
+      "memories": "Creation and preservation of cherished memories.",
+      "decorations": "Thoughtfully curated decorations enhancing the ambiance.",
+      "celebration": "Sharing of love, joy, and well-wishes among attendees."
+    },
     "price": 300.0,
     "parentNames": ["Emily", "David"],
     "babyGender": "Girl"

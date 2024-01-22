@@ -1,3 +1,4 @@
+import { useLoaderData } from "react-router-dom";
 import Footer from "../Shared/Footer";
 import Navbar from "../Shared/Navbar";
 import NewsLetter from "./NewsLetter";
@@ -5,6 +6,8 @@ import Services from "./Services";
 import Team from "./Team";
 
 const Home = () => {
+  const services = useLoaderData();
+  console.log(services);
   return (
     <div>
       <Navbar></Navbar>
@@ -35,7 +38,15 @@ const Home = () => {
           />
         </div>
       </div>
-      <Services></Services>
+
+      <div>
+        <h1 className="text-3xl font-bold py-4 text-center">Our Services</h1>
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5">
+          {services.map((service) => (
+            <Services key={service.id} service={service}></Services>
+          ))}
+        </div>
+      </div>
       <Team></Team>
       <NewsLetter></NewsLetter>
 
