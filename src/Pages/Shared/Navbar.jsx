@@ -20,6 +20,9 @@ const Navbar = () => {
       <li>
         <NavLink to="/blog">Blog </NavLink>
       </li>
+      <li>
+        <NavLink to="/contact">Contact</NavLink>
+      </li>
     </>
   );
   const handleLogOut = () => {

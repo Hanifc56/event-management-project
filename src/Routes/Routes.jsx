@@ -7,11 +7,14 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import Blog from "../Pages/Blog/Blog";
 import PrivetRoutes from "./PrivetRoutes";
+import Contact from "../Pages/Contact/Contact";
+import ErrorPage from "../Pages/Error/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -34,6 +37,14 @@ const router = createBrowserRouter([
         element: (
           <PrivetRoutes>
             <Blog></Blog>
+          </PrivetRoutes>
+        ),
+      },
+      {
+        path: "/contact",
+        element: (
+          <PrivetRoutes>
+            <Contact></Contact>
           </PrivetRoutes>
         ),
       },
