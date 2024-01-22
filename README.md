@@ -8,4 +8,4 @@
 => It is user friendly and conviniat to use
 => It can help a user to get his pefect event managment plan
 
-# live site:
+# live site: https://react-event-management-18b9d.web.app/
