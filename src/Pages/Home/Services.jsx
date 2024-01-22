@@ -13,7 +13,7 @@ const Services = ({ service }) => {
           <h2 className="card-title text-blue-400">{title}</h2>
           <p>{description}</p>
           <div className="card-actions">
-            <Link to={`/services/${id}`}>
+            <Link to={`/service/${id}`}>
               <button className="btn btn-outline">Details</button>
             </Link>
           </div>

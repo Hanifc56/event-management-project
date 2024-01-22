@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "../Layout/Root";
 import Contact from "../Pages/Contact/Contact";
 import Home from "../Pages/Home/Home";
-import Service from "../Pages/Services/Service";
+
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import Blog from "../Pages/Blog/Blog";
@@ -10,6 +10,9 @@ import PrivetRoutes from "./PrivetRoutes";
 
 import ErrorPage from "../Pages/Error/ErrorPage";
 import Contents from "../Pages/Content/Contents";
+
+import Service from "../Pages/Service/Service";
+import Services from "../Pages/Home/Services";
 
 const router = createBrowserRouter([
   {
@@ -27,7 +30,11 @@ const router = createBrowserRouter([
         element: <Contact></Contact>,
       },
       {
-        path: "/services/:id",
+        path: "/services",
+        element: <Services></Services>,
+      },
+      {
+        path: "/service/:id",
         element: (
           <PrivetRoutes>
             <Service></Service>
