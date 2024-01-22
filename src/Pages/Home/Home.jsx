@@ -1,5 +1,6 @@
 import Footer from "../Shared/Footer";
 import Navbar from "../Shared/Navbar";
+import NewsLetter from "./NewsLetter";
 import Services from "./Services";
 
 const Home = () => {
@@ -34,6 +35,7 @@ const Home = () => {
         </div>
       </div>
       <Services></Services>
+      <NewsLetter></NewsLetter>
 
       <Footer></Footer>
     </div>
