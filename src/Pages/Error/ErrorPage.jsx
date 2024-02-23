@@ -3,14 +3,6 @@ import { Link } from "react-router-dom";
 const ErrorPage = () => {
   return (
     <>
-      {/*
-                  This example requires updating your template:
-          
-                  ```
-                  <html class="h-full">
-                  <body class="h-full">
-                  ```
-                */}
       <main className="grid lg:grid-cols-4 md:grid-rows-2-2 min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8 gap-5">
         <div className="text-center md:row-span-1 lg:col-span-2">
           <p className="text-base font-semibold text-indigo-600">404</p>
